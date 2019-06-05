@@ -14,9 +14,11 @@
 		8280F8AF22A3B2AA00E96F01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8280F8AE22A3B2AA00E96F01 /* Assets.xcassets */; };
 		8280F8B222A3B2AA00E96F01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8280F8B022A3B2AA00E96F01 /* LaunchScreen.storyboard */; };
 		82E064DF22A6783800D3D10E /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E064DE22A6783800D3D10E /* CategoryViewController.swift */; };
+		B64982C0CFE4E016684B0670 /* Pods_QuickTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88399A58607268BB02C5ACF2 /* Pods_QuickTodo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74B3C5E4DE5E9D376667CA83 /* Pods-QuickTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickTodo.release.xcconfig"; path = "Target Support Files/Pods-QuickTodo/Pods-QuickTodo.release.xcconfig"; sourceTree = "<group>"; };
 		8270050722A5334C007B080F /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		8280F8A422A3B2A900E96F01 /* QuickTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8280F8A722A3B2A900E96F01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		8280F8B122A3B2AA00E96F01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8280F8B322A3B2AA00E96F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82E064DE22A6783800D3D10E /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		88399A58607268BB02C5ACF2 /* Pods_QuickTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD42FB5A3683CAC9FC4730C8 /* Pods-QuickTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickTodo.debug.xcconfig"; path = "Target Support Files/Pods-QuickTodo/Pods-QuickTodo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64982C0CFE4E016684B0670 /* Pods_QuickTodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BB74FCCD310DDEB537ED9AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88399A58607268BB02C5ACF2 /* Pods_QuickTodo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8280F89B22A3B2A800E96F01 = {
 			isa = PBXGroup;
 			children = (
 				8280F8A622A3B2A900E96F01 /* QuickTodo */,
 				8280F8A522A3B2A900E96F01 /* Products */,
+				9D388D51F1A64244ACA775B3 /* Pods */,
+				6BB74FCCD310DDEB537ED9AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +117,16 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9D388D51F1A64244ACA775B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD42FB5A3683CAC9FC4730C8 /* Pods-QuickTodo.debug.xcconfig */,
+				74B3C5E4DE5E9D376667CA83 /* Pods-QuickTodo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8280F8B622A3B2AA00E96F01 /* Build configuration list for PBXNativeTarget "QuickTodo" */;
 			buildPhases = (
+				36117B2B3C45B10A0A9DB47D /* [CP] Check Pods Manifest.lock */,
 				8280F8A022A3B2A800E96F01 /* Sources */,
 				8280F8A122A3B2A800E96F01 /* Frameworks */,
 				8280F8A222A3B2A800E96F01 /* Resources */,
+				D9F631DEFA18D89ABC9D2B80 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +194,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36117B2B3C45B10A0A9DB47D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9F631DEFA18D89ABC9D2B80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickTodo/Pods-QuickTodo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickTodo/Pods-QuickTodo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickTodo/Pods-QuickTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8280F8A022A3B2A800E96F01 /* Sources */ = {
@@ -320,6 +389,7 @@
 		};
 		8280F8B722A3B2AA00E96F01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD42FB5A3683CAC9FC4730C8 /* Pods-QuickTodo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -337,6 +407,7 @@
 		};
 		8280F8B822A3B2AA00E96F01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74B3C5E4DE5E9D376667CA83 /* Pods-QuickTodo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
